@@ -6,3 +6,10 @@ services:
     container_name: django-api-p32
     ports:
       - "4512:8000"
+  front:
+    image: v1dkos/django-frontend:latest
+    #build:
+
+    container_name: react_front
+    ports:
+      - "4518:80"
